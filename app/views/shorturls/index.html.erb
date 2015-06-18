@@ -1,2 +1,16 @@
-<h1>Shorturls#index</h1>
-<p>Find me in app/views/shorturls/index.html.erb</p>
+
+<table style="width:100%">
+     <caption>Your given url and its short url</caption>
+        <tr>
+        <th>Long Url</th>    
+        <th>Short Url</th>
+        </tr>
+             <% @shorturls.each do |shorturl|%> 
+        <tr>
+      
+            <td><%= shorturl.long_url%></td>
+            <td><%= link_to shorturl.short_url, shorturl.long_url%></td>
+        
+        </tr>
+        <%end%>
+</table>

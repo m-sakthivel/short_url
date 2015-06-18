@@ -118,3 +118,316 @@ Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.
 Processing by ShorturlsController#index as HTML
   Rendered shorturls/index.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shorturls/new" for 61.16.175.141 at 2015-06-18 09:13:40 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ShorturlsController#new as HTML
+  Rendered shorturls/new.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 377ms (Views: 354.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/shorturls" for 61.16.175.141 at 2015-06-18 09:13:45 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#index as HTML
+  [1m[35mShorturl Load (0.2ms)[0m  SELECT "shorturls".* FROM "shorturls"
+  Rendered shorturls/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shorturls" for 61.16.175.141 at 2015-06-18 09:14:51 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#index as HTML
+  [1m[36mShorturl Load (0.2ms)[0m  [1mSELECT "shorturls".* FROM "shorturls"[0m
+  Rendered shorturls/index.html.erb within layouts/application (15.2ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `lint_to' for #<#<Class:0x000000038c9cd8>:0x007f8df570c238>):
+     8:         <tr>
+     9:         <% @shorturls.each do |shorturl|%>    
+    10:             <td><%= shorturl.long_url%></td>
+    11:             <td><%= lint_to "shorturl.short_url", shorturl.short_url%></td>
+    12:         <%end%>
+    13:         </tr>
+    14: </table>
+  app/views/shorturls/index.html.erb:11:in `block in _app_views_shorturls_index_html_erb__4600452280761533863_70123848709920'
+  app/views/shorturls/index.html.erb:9:in `_app_views_shorturls_index_html_erb__4600452280761533863_70123848709920'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (41.2ms)
+
+
+Started GET "/shorturls" for 61.16.175.141 at 2015-06-18 09:15:08 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#index as HTML
+  [1m[35mShorturl Load (0.2ms)[0m  SELECT "shorturls".* FROM "shorturls"
+  Rendered shorturls/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shorturls" for 61.16.175.141 at 2015-06-18 09:16:12 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#index as HTML
+  [1m[36mShorturl Load (0.2ms)[0m  [1mSELECT "shorturls".* FROM "shorturls"[0m
+  Rendered shorturls/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shorturls" for 61.16.175.141 at 2015-06-18 09:16:26 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#index as HTML
+  [1m[35mShorturl Load (0.2ms)[0m  SELECT "shorturls".* FROM "shorturls"
+  Rendered shorturls/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 64ms (Views: 62.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shorturls" for 61.16.175.141 at 2015-06-18 09:22:24 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#index as HTML
+  [1m[36mShorturl Load (0.2ms)[0m  [1mSELECT "shorturls".* FROM "shorturls"[0m
+  Rendered shorturls/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 68ms (Views: 66.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-f7016d80dd912c380340b564d64bd5df21dbc47beda845de6abdd12a269bc146.css?body=1" for 61.16.175.141 at 2015-06-18 09:22:24 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/shorturls" for 61.16.175.141 at 2015-06-18 09:26:07 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#index as HTML
+  [1m[35mShorturl Load (0.4ms)[0m  SELECT "shorturls".* FROM "shorturls"
+  Rendered shorturls/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 50ms (Views: 45.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/shorturls/new" for 61.16.175.141 at 2015-06-18 09:26:15 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#new as HTML
+  Rendered shorturls/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 68ms (Views: 66.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorturls" for 61.16.175.141 at 2015-06-18 09:26:19 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"49uJVhx+Z2+jx9RtuJGwr0MISWnNxtYEO/m3bjCZlcyc79d6WyDrETYBgym9elkumZm8ccIn6yTV2oP3kERmQg==", "long_url"=>"test", "commit"=>"Create Url"}
+Completed 500 Internal Server Error in 414ms (ActiveRecord: 0.0ms)
+
+BitlyError (INVALID_URI - '500'):
+  app/controllers/shorturls_controller.rb:10:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.7ms)
+
+
+Started GET "/shorturls/new" for 61.16.175.141 at 2015-06-18 09:27:23 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#new as HTML
+  Rendered shorturls/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 47ms (Views: 39.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/shorturls" for 61.16.175.141 at 2015-06-18 09:27:26 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8m3TiJxv0PRX5Eksrhf/vHHjBgEizjDqgq9ELlxaypyNWY2k2zFcisIiHmir/BY9q3LzGS0vDcpsjHC3/Ic5Eg==", "long_url"=>"da", "commit"=>"Create Url"}
+Completed 500 Internal Server Error in 402ms (ActiveRecord: 0.0ms)
+
+BitlyError (INVALID_URI - '500'):
+  app/controllers/shorturls_controller.rb:10:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.0ms)
+
+
+Started GET "/shorturls/new" for 61.16.175.141 at 2015-06-18 09:50:34 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#new as HTML
+  Rendered shorturls/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 46ms (Views: 37.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/shorturls" for 61.16.175.141 at 2015-06-18 09:50:39 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G2i1SCrmdBzRVAkhKOiADW3McAhUvVc+FPoezyUaDiZkXOtkbbj4YkSSXmUtA2mMt12FEFtcah762SpWhcf9qA==", "long_url"=>"test", "commit"=>"Create Url"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `new_shorturls_paths' for #<ShorturlsController:0x000000037725b0>):
+  app/controllers/shorturls_controller.rb:20:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (99.3ms)
+
+
+Started GET "/shorturls/new" for 61.16.175.141 at 2015-06-18 09:52:06 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ShorturlsController#new as HTML
+  Rendered shorturls/new.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 285ms (Views: 266.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/shorturls" for 61.16.175.141 at 2015-06-18 09:52:11 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rmWLDMtE25CCMJ7RT3Q8Uyx9LPcZqf7VxmSLLf06vGDRUdUgjBpX7hf2yZVKn9XS9uzZ7xZIw/UoR7+0XedP7g==", "long_url"=>"test", "commit"=>"Create Url"}
+Redirected to https://demo-project-sakthi123.c9.io/shorturls/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/shorturls/new" for 61.16.175.141 at 2015-06-18 09:52:11 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#new as HTML
+  Rendered shorturls/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 35ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shorturls/new" for 61.16.175.141 at 2015-06-18 09:56:04 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#new as HTML
+  Rendered shorturls/new.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial layouts/_footer with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ubuntu/workspace/short_url/app/views"
+):
+    12:         <div class="alert alert-<%= key %>"><%= value %></div>
+    13:       <% end %>
+    14:       <%= yield %>
+    15:       <%= render 'layouts/footer' %>
+    16:       <%= debug(params) if Rails.env.development? %>
+    17:     </div>  
+    18: 
+  app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___2543488970987822826_69828635856000'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.0ms)
+
+
+Started GET "/shorturls/new" for 61.16.175.141 at 2015-06-18 09:56:26 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#new as HTML
+  Rendered shorturls/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 62ms (Views: 60.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorturls" for 61.16.175.141 at 2015-06-18 09:56:33 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"19Ew2C5MMR7EH3zzLDJ4c7EQ5K11xyhageVlFY+Aghuo5W70aRK9YFHZK7cp2ZHya4ERtXomFXpvxlGML11xlQ==", "long_url"=>"dadfafa", "commit"=>"Create Url"}
+Redirected to https://demo-project-sakthi123.c9.io/shorturls/new
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/shorturls/new" for 61.16.175.141 at 2015-06-18 09:56:33 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#new as HTML
+  Rendered shorturls/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 86ms (Views: 83.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shorturls/new" for 61.16.175.141 at 2015-06-18 09:56:47 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#new as HTML
+  Rendered shorturls/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 55ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shorturls/new" for 61.16.175.141 at 2015-06-18 09:57:54 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#new as HTML
+  Rendered shorturls/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 54ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorturls" for 61.16.175.141 at 2015-06-18 09:57:57 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tpR1qm5BgwF7Kt0eSDE9liotG0l205IYMeMSqlXFfmDJoCuGKR8Pf+7silpN2tQX8LzuUXkyrzjfwCYz9RiN7g==", "long_url"=>"fasdfa", "commit"=>"Create Url"}
+Redirected to https://demo-project-sakthi123.c9.io/shorturls/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/shorturls/new" for 61.16.175.141 at 2015-06-18 09:57:57 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#new as HTML
+  Rendered shorturls/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorturls" for 61.16.175.141 at 2015-06-18 09:58:12 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bDbl8xOAQuSiBXxiHRb8FuOSRYmSTEyM6mIEIvXsjpMTArvfVN7OmjfDKyYY/RWXOQOwkZ2tcawEQTC7VTF9HQ==", "long_url"=>"https://yahoo.com", "commit"=>"Create Url"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "shorturls" ("long_url", "short_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["long_url", "https://yahoo.com"], ["short_url", "http://yhoo.it/1fj0TzK"], ["created_at", "2015-06-18 09:58:12.722072"], ["updated_at", "2015-06-18 09:58:12.722072"]]
+  [1m[35m (12.2ms)[0m  commit transaction
+Redirected to https://demo-project-sakthi123.c9.io/shorturls
+Completed 302 Found in 469ms (ActiveRecord: 12.8ms)
+
+
+Started GET "/shorturls" for 61.16.175.141 at 2015-06-18 09:58:12 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#index as HTML
+  [1m[36mShorturl Load (0.2ms)[0m  [1mSELECT "shorturls".* FROM "shorturls"[0m
+  Rendered shorturls/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shorturls/new" for 61.16.175.141 at 2015-06-18 10:00:00 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#new as HTML
+  Rendered shorturls/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorturls" for 61.16.175.141 at 2015-06-18 10:00:11 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7twl1aJQvoVjsJgL+yG9wH/quIpDfFvXY2CUBKNp5fWR6Hv55Q4y+/Z2z0/+ylRBpXtNkkydZveNQ6CdA7QWew==", "long_url"=>"http://stackoverflow.com/questions/17835454/flash-message-not-displaying-after-redirect-or-render", "commit"=>"Create Url"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "shorturls" ("long_url", "short_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["long_url", "http://stackoverflow.com/questions/17835454/flash-message-not-displaying-after-redirect-or-render"], ["short_url", "http://bit.ly/1fj13qN"], ["created_at", "2015-06-18 10:00:11.817940"], ["updated_at", "2015-06-18 10:00:11.817940"]]
+  [1m[35m (10.0ms)[0m  commit transaction
+Redirected to https://demo-project-sakthi123.c9.io/shorturls
+Completed 302 Found in 465ms (ActiveRecord: 10.4ms)
+
+
+Started GET "/shorturls" for 61.16.175.141 at 2015-06-18 10:00:12 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#index as HTML
+  [1m[36mShorturl Load (0.3ms)[0m  [1mSELECT "shorturls".* FROM "shorturls"[0m
+  Rendered shorturls/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/shorturls/new" for 61.16.175.141 at 2015-06-18 10:01:56 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#new as HTML
+  Rendered shorturls/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shorturls" for 61.16.175.141 at 2015-06-18 10:02:01 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#index as HTML
+  [1m[35mShorturl Load (0.3ms)[0m  SELECT "shorturls".* FROM "shorturls"
+  Rendered shorturls/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.3ms)
