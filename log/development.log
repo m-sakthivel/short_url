@@ -47,3 +47,74 @@ BitlyError (MISSING_ARG_URI - '500'):
   Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
   Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
   Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.5ms)
+
+
+Started GET "/shorturls/new" for 61.16.175.141 at 2015-06-18 08:54:14 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ShorturlsController#new as HTML
+  Rendered shorturls/new.html.erb within layouts/application (85.1ms)
+Completed 200 OK in 367ms (Views: 350.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/shorturls" for 61.16.175.141 at 2015-06-18 08:54:19 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PBc7fQ8fYFv0wJ8TaeZcLd02yHteFNBuLZtd/H/mP2xDI2VRSEHsJWEGyFdsDbWsB6c9Y1H17U7DuGll3zvM4g==", "long_url"=>"https://google.com", "commit"=>"Create Url"}
+  Rendered shorturls/create.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 458ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shorturls/new" for 61.16.175.141 at 2015-06-18 08:55:25 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#new as HTML
+  Rendered shorturls/new.html.erb within layouts/application (54.3ms)
+Completed 200 OK in 120ms (Views: 113.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/shorturls" for 61.16.175.141 at 2015-06-18 08:55:29 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8KW3ESdPBeTsYFeHfTVcnW9n4WQjmgAgSE9U4GGCOqGPkek9YBGJmnmmAMN43rUctfYUfCx7PQCmbGB5wV/JLw==", "long_url"=>"https://google.com", "commit"=>"Create Url"}
+  Rendered shorturls/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 434ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shorturls/new" for 61.16.175.141 at 2015-06-18 08:56:44 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#new as HTML
+  Rendered shorturls/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 92ms (Views: 77.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/shorturls" for 61.16.175.141 at 2015-06-18 08:56:48 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mNUNNVeuxB8T9Mh6zY/prskd0nmgdgr/AMsQll3aJ/Hn4VMZEPBIYYYynz7IZAAvE4wnYa+XN9/u6CQP/QfUfw==", "long_url"=>"https://google.com", "commit"=>"Create Url"}
+  Rendered shorturls/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 490ms (Views: 74.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shorturls/new" for 61.16.175.141 at 2015-06-18 09:06:05 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#new as HTML
+  Rendered shorturls/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 54ms (Views: 45.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/shorturls" for 61.16.175.141 at 2015-06-18 09:06:23 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NhXfrWJdFmcCwlz6Pjn/gtxxkSTx5UTRJnyI9jZ0/IdJIYGBJQOaGZcEC7470hYDBuBkPP4EefHIX7xvlqkPCQ==", "long_url"=>"https://google.com", "commit"=>"Create Url"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "shorturls" ("long_url", "short_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["long_url", "https://google.com"], ["short_url", "http://bit.ly/1GNLwtv"], ["created_at", "2015-06-18 09:06:23.641964"], ["updated_at", "2015-06-18 09:06:23.641964"]]
+  [1m[35m (10.2ms)[0m  commit transaction
+Redirected to https://demo-project-sakthi123.c9.io/shorturls
+Completed 302 Found in 418ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/shorturls" for 61.16.175.141 at 2015-06-18 09:06:23 +0000
+Cannot render console from 61.16.175.141! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShorturlsController#index as HTML
+  Rendered shorturls/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms)
