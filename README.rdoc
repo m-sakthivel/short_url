@@ -1,3 +1,11 @@
+
+Ruby Version ruby 2.2.1p85
+
+Rails Version Rails 4.2.1
+
+This is the application 
+
+
 == README
 
 This README would normally document whatever steps are necessary to get the
