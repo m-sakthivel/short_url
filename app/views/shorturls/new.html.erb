@@ -1,2 +1,7 @@
-<h1>Shorturls#new</h1>
-<p>Find me in app/views/shorturls/new.html.erb</p>
+<h1>Create a new Bit.ly URL:</h1>
+
+<%= form_for "", url: shorturls_path, method: :post do |f| %>
+ <%= f.label :long_url %>
+ <%= f.text_field :long_url %>
+ <%= f.submit "Create Url" %>
+<% end %>
