@@ -1,4 +1,5 @@
 class Numbergame
+   
     def initialize
         @array = [[nil,nil,nil,nil],[nil,nil,nil,nil],[nil,nil,nil,nil],[nil,nil,nil,nil]]
         2.times { fill }

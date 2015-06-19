@@ -3,34 +3,14 @@ Ruby Version ruby 2.2.1p85
 
 Rails Version Rails 4.2.1
 
-This is the application 
+To play 2048 game in your terminal follow the following procedure
 
+1. Clone this repo
 
-== README
+2. cd short_url in your terminal
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+3. Type ruby game.rb in your terminal
 
-Things you may want to cover:
+4. Use "a=>left, s=>down, d=>right, w=>up"
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+5. Type the key and press enter until the game gets end
